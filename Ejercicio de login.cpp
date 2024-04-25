@@ -6,6 +6,8 @@ using namespace std;
 
 int main(){
 	
+	//Comentario de prueba//
+	
 	setlocale(LC_CTYPE,"spanish");
 	
 	string nombre="Admin";
