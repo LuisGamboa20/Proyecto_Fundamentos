@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 	
-	//Comentario de prueba//
+	//Registro//
 	
 	setlocale(LC_CTYPE,"spanish");
 	
