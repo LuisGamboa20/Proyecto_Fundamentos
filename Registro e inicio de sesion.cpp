@@ -11,7 +11,7 @@ int main(){
 	
 	//Inicio//
 	string nombre="Admin",nombre2="Admin",password,password2;
-	int men_registro=0;
+	int men_registro=0,men_subsucursal=0;;
 	
 	cout<<"1)Registro e inicio de sesión\n";
 		cin>>men_registro;
@@ -53,41 +53,69 @@ int main(){
 	system("cls");
 	int men_sucursal=0;
 	
-	cout<<"Por favor seleccione la sucursal a modificar: "<<endl;
-	cout<<"1)1° Sucursal\n";
-	cout<<"2)2° Sucursal\n";
-	cout<<"3)3° Sucursal\n";
-	cout<<"4)4° Sucursal\n";
-	cout<<"5)5° Sucursal\n";
-	cin>>men_sucursal;
-	
-	switch(men_sucursal){
-		case 1:{
-			cout<<"Bienvenido a la Sucursal 1° ";
-			break;
+	do{
+		cout<<"Por favor seleccione la sucursal a modificar: "<<endl;
+		cout<<"1)1° Sucursal\n";
+		cout<<"2)2° Sucursal\n";
+		cout<<"3)3° Sucursal\n";
+		cout<<"4)4° Sucursal\n";
+		cout<<"5)5° Sucursal\n";
+		cin>>men_sucursal;
+		
+		switch(men_sucursal){
+			case 1:{
+				cout<<"Bienvenido a la Sucursal 1° ";
+				system("cls");
+				cout<<"Seleccione la opción a ejecutar\n";
+				cout<<"1)Añadir productos\n";
+				cout<<"2)Eliminar productos\n";
+				cin>>men_subsucursal;
+				break;
+			}
+			case 2:{
+				cout<<"Bienvenido a la Sucursal 2° ";
+				system("cls");
+				cout<<"Seleccione la opción a ejecutar\n";
+				cout<<"1)Añadir productos\n";
+				cout<<"2)Eliminar productos\n";
+				cin>>men_subsucursal;				
+				break;
+			}
+			case 3:{
+				cout<<"Bienvenido a la Sucursal 3° ";
+				system("cls");
+				cout<<"Seleccione la opción a ejecutar\n";
+				cout<<"1)Añadir productos\n";
+				cout<<"2)Eliminar productos\n";
+				cin>>men_subsucursal;							
+				break;
+			}
+			case 4:{
+				cout<<"Bienvenido a la Sucursal 4° ";
+				system("cls");
+				cout<<"Seleccione la opción a ejecutar\n";
+				cout<<"1)Añadir productos\n";
+				cout<<"2)Eliminar productos\n";
+				cin>>men_subsucursal;				
+				break;
+			}
+			case 5:{
+				cout<<"Bienvenido a la Sucursal 5° ";
+				system("cls");
+				cout<<"Seleccione la opción a ejecutar\n";
+				cout<<"1)Añadir productos\n";
+				cout<<"2)Eliminar productos\n";
+				cin>>men_subsucursal;				
+				break;
+			}
+			default:{
+				cout<<"Por favor ingrese una sucursal valida\n";
+				system("pause");
+				break;
+			}
 		}
-		case 2:{
-			cout<<"Bienvenido a la Sucursal 2° ";
-			break;
-		}
-		case 3:{
-			cout<<"Bienvenido a la Sucursal 3° ";			
-			break;
-		}
-		case 4:{
-			cout<<"Bienvenido a la Sucursal 4° ";
-			break;
-		}
-		case 5:{
-			cout<<"Bienvenido a la Sucursal 5° ";
-			break;
-		}
-		default:{
-			cout<<"Por favor ingrese una sucursal valida";
-			break;
-		}
-	}
-	
+		system("cls");
+	}while(men_sucursal >= 6);
 	return 0;
 }
 
