@@ -37,7 +37,8 @@ int main(){
 				cin>>password2;
 				system("cls");
 				if(nombre2 == nombre && password2 == password){
-					cout<<"Bienvenido a su cuenta Sr(a) "<<nombre;
+					cout<<"Bienvenido a su cuenta Sr(a) "<<nombre<<endl;
+					system("pause");
 				}else{
 					cout<<"Los datos no coinciden intentelo de nuevo\n";
 				}
@@ -49,7 +50,44 @@ int main(){
 			break;
 		}
 	}
-		
+	system("cls");
+	int men_sucursal=0;
+	
+	cout<<"Por favor seleccione la sucursal a modificar: "<<endl;
+	cout<<"1)1° Sucursal\n";
+	cout<<"2)2° Sucursal\n";
+	cout<<"3)3° Sucursal\n";
+	cout<<"4)4° Sucursal\n";
+	cout<<"5)5° Sucursal\n";
+	cin>>men_sucursal;
+	
+	switch(men_sucursal){
+		case 1:{
+			cout<<"Bienvenido a la Sucursal 1° ";
+			break;
+		}
+		case 2:{
+			cout<<"Bienvenido a la Sucursal 2° ";
+			break;
+		}
+		case 3:{
+			cout<<"Bienvenido a la Sucursal 3° ";			
+			break;
+		}
+		case 4:{
+			cout<<"Bienvenido a la Sucursal 4° ";
+			break;
+		}
+		case 5:{
+			cout<<"Bienvenido a la Sucursal 5° ";
+			break;
+		}
+		default:{
+			cout<<"Por favor ingrese una sucursal valida";
+			break;
+		}
+	}
+	
 	return 0;
 }
 
