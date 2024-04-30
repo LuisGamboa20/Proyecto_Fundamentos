@@ -1,12 +1,15 @@
 #include <iostream>
 #include <string>
 #include <locale.h>
+#include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
 int main(){
 	
 	setlocale(LC_CTYPE,"spanish");
+	srand(time(NULL));
 
 	
 	//Inicio//
@@ -14,13 +17,14 @@ int main(){
 	int men_registro=0,men_subsucursal=0;;
 	
 	cout<<"1)Registro e inicio de sesión\n";
-		cin>>men_registro;
+	cin>>men_registro;
 	system("cls");
 	switch(men_registro){
 		case 1:{
 			//Registro//
 			cout<<"Por favor ingrese un nombre para la cuenta: ";
 			cin>>nombre;
+			getline(cin,nombre);
 			do{
 				cout<<"Por favor digite una contraseña mayor o igual a 8 caracteres: ";
 				cin>>password;
@@ -33,6 +37,7 @@ int main(){
 			do{
 				cout<<"Por favor digite su nombre de usuario: ";
 				cin>>nombre2;
+				getline(cin,nombre2);
 				cout<<"Por favor digite su contraseña: ";
 				cin>>password2;
 				system("cls");
@@ -70,6 +75,22 @@ int main(){
 				cout<<"1)Añadir productos\n";
 				cout<<"2)Eliminar productos\n";
 				cin>>men_subsucursal;
+				switch(men_subsucursal){
+					case 1:{
+						int n;
+						cout<<"Por favor digite la cantidad de productos a ingresar: ";
+						cin>>n;
+						int list[n];
+						for(int i = 0; i < n; i++){
+						//	cout<<"Por favor digite la cantidad del producto "<<i<<"° :";//
+							list[i]= 1 + rand() % (101-1);
+							cout<<list[i]<<"\t";
+						}
+						cout<<endl;
+						system("pause");
+						break;
+					}
+				}
 				
 				break;
 			}
@@ -79,7 +100,24 @@ int main(){
 				cout<<"Seleccione la opción a ejecutar\n";
 				cout<<"1)Añadir productos\n";
 				cout<<"2)Eliminar productos\n";
-				cin>>men_subsucursal;				
+				cin>>men_subsucursal;	
+				switch(men_subsucursal){
+					case 1:{
+						int n;
+						cout<<"Por favor digite la cantidad de productos a ingresar: ";
+						cin>>n;
+						int list[n];
+						for(int i = 0; i < n; i++){
+						//	cout<<"Por favor digite la cantidad del producto "<<i<<"° :";//
+							list[i]= 1 + rand() % (101-1);
+							cout<<list[i]<<"\t";
+						}
+						cout<<endl;
+						system("pause");
+						break;
+					}
+				}
+				
 				break;
 			}
 			case 3:{
@@ -89,6 +127,23 @@ int main(){
 				cout<<"1)Añadir productos\n";
 				cout<<"2)Eliminar productos\n";
 				cin>>men_subsucursal;							
+				switch(men_subsucursal){
+					case 1:{
+						int n;
+						cout<<"Por favor digite la cantidad de productos a ingresar: ";
+						cin>>n;
+						int list[n];
+						for(int i = 0; i < n; i++){
+						//	cout<<"Por favor digite la cantidad del producto "<<i<<"° :";//
+							list[i]= 1 + rand() % (101-1);
+							cout<<list[i]<<"\t";
+						}
+						cout<<endl;
+						system("pause");
+						break;
+					}
+				}
+				
 				break;
 			}
 			case 4:{
@@ -98,18 +153,50 @@ int main(){
 				cout<<"1)Añadir productos\n";
 				cout<<"2)Eliminar productos\n";
 				cin>>men_subsucursal;				
+				switch(men_subsucursal){
+					case 1:{
+						int n;
+						cout<<"Por favor digite la cantidad de productos a ingresar: ";
+						cin>>n;
+						int list[n];
+						for(int i = 0; i < n; i++){
+						//	cout<<"Por favor digite la cantidad del producto "<<i<<"° :";//
+							list[i]= 1 + rand() % (101-1);
+							cout<<list[i]<<"\t";
+						}
+						cout<<endl;
+						system("pause");
+						break;
+					}
+				}
+				
 				break;
-			}
-			case 5:{
+			}			case 5:{
 				cout<<"Bienvenido a la Sucursal 5° ";
 				system("cls");
 				cout<<"Seleccione la opción a ejecutar\n";
 				cout<<"1)Añadir productos\n";
 				cout<<"2)Eliminar productos\n";
 				cin>>men_subsucursal;				
+				switch(men_subsucursal){
+					case 1:{
+						int n;
+						cout<<"Por favor digite la cantidad de productos a ingresar: ";
+						cin>>n;
+						int list[n];
+						for(int i = 0; i < n; i++){
+						//	cout<<"Por favor digite la cantidad del producto "<<i<<"° :";//
+							list[i]= 1 + rand() % (101-1);
+							cout<<list[i]<<"\t";
+						}
+						cout<<endl;
+						system("pause");
+						break;
+					}
+				}
+				
 				break;
-			}
-			default:{
+			}			default:{
 				cout<<"Por favor ingrese una sucursal valida\n";
 				system("pause");
 				break;
