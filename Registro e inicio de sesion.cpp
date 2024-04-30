@@ -70,6 +70,7 @@ int main(){
 				cout<<"1)Añadir productos\n";
 				cout<<"2)Eliminar productos\n";
 				cin>>men_subsucursal;
+				
 				break;
 			}
 			case 2:{
