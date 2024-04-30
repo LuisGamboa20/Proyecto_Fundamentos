@@ -3,6 +3,7 @@
 #include <locale.h>
 #include <ctime>
 #include <cstdlib>
+#include <vector>
 
 using namespace std;
 
@@ -79,12 +80,12 @@ int main(){
 					case 1:{
 						int n;
 						cout<<"Por favor digite la cantidad de productos a ingresar: ";
-						cin>>n;
-						int list[n];
+						cin>>n;					
+						vector<int> list;
+						list.push_back(n);
 						for(int i = 0; i < n; i++){
 						//	cout<<"Por favor digite la cantidad del producto "<<i<<"° :";//
-							list[i]= 1 + rand() % (101-1);
-							cout<<list[i]<<"\t";
+						cout<<valor<<"\t";
 						}
 						cout<<endl;
 						system("pause");
