@@ -1,6 +1,7 @@
 #include <iostream>
 #include <locale.h>
 
+
 using namespace std;
 
 //-------------------------------------------------------------------//
@@ -266,7 +267,7 @@ void ModificarPrecios(int precios[], string productos[],int numProductos) {
 
     // Mostrar los productos y sus precios actuales
     cout << "Productos y precios actuales:\n";
-    for(int i = 0; i < numProductos; ++i) {
+    for(int i = 0; i < numProductos; i++) {
         cout << i + 1 << ") " << productos[i] << " - Precio: " << precios[i] << "\n";
     }
 
@@ -294,7 +295,7 @@ void ModificarPrecios(int precios[], string productos[],int numProductos) {
 void ModificarVentas(string nombre[], string productos[], int stock[][5], int ventas[][5],int numProductos) {
     int sucursal, producto, cantidad;
     cout << "Ventas actuales por sucursal y producto:\n";
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 5; i++) {
         cout << "Sucursal " << i + 1 << " - " << nombre[i] << ":\n";
         for (int j = 0; j < numProductos; j++) {
             cout << "\tProducto " << j + 1 << " - " << productos[j] << ": " << ventas[i][j] << "\n";
@@ -390,13 +391,13 @@ void EliminarProductoDeStock(string productos[], int stock[][5], int& numProduct
         // Desplazar los productos y el stock una posición hacia adelante
         for (int i = indiceProducto - 1; i < numProductos - 1; i++) {
             productos[i] = productos[i + 1];
-            for (int j = 0; j < 5; j++) { // Asumiendo 5 sucursales
+            for (int j = 0; j < 5; j++) {
                 stock[j][i] = stock[j][i + 1];
             }
         }
         numProductos--; // Disminuir el contador de productos
     	cout << "Producto eliminado. Productos restantes: " << numProductos << endl;
-    	for (int i = 0; i < numProductos; ++i) {
+    	for (int i = 0; i < numProductos; i++) {
         	cout << productos[i] << endl;
     	}   
 	}
@@ -504,7 +505,7 @@ int main(){
 	
 	setlocale(LC_CTYPE,"spanish");
 	
-	int men_registro = 0;
+	-int men_registro = 0;
     cout<<"1)Registro e inicio de sesión\n";
     cout<<"2)Salir\n";
     cin >> men_registro;
@@ -523,7 +524,7 @@ int main(){
 	int stock[5][5]={{30,15,20,45,50},//Sucursal_1,Stock
 					 {20,35,10,35,40},//Sucursal_2,Stock
 					 {50,20,15,35,45},//Sucursal_3,Stock
-					 {10,40,25,45,30},//Sucursal_4,Stock
+					 {10,40,25,45,30},//Sucursal_4,Stock 	
 					 {40,10,30,30,25}};//Sucursal_5,Stock
 					 
 	int ventas[5][5]={{30,12,20,30,41},//Sucursal_1,Ventas

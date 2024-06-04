@@ -1,0 +1,1 @@
+Micro-proyecto por el cual se crea un inventario para una cadena de comidas con multiples sucursales
