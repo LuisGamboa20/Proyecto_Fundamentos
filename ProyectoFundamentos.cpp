@@ -410,22 +410,22 @@ void MenuOpciones(string nombre[], string productos[], int precios[], int stock[
 	int cont=0,eleccion=0;
 	while(cont==0){
 		system("cls");
-		cout<<"Ingrese la opción que desean realizar\n";
-		cout<<"1)Mostrar cantidad de artículos vendidos de cada artículo por cada sucursal\n";
-		cout<<"2)Mostrar cantidad de artículos vendidos de cada artículo en la sucursal indicada\n";
-		cout<<"3)Mostrar cantidad de artículos vendido de un artículo dado de la sucursal indicada\n";
-		cout<<"4)Mostrar cantidad de stock disponible de cada artículo de la sucursal dada\n";
-		cout<<"5)Mostrar el stock disponible de todos los artículos en cada sucursal\n";
-		cout<<"6)Mostrar el stock disponible del artículo indicado en la sucursal dada\n";
-		cout<<"7)Mostrar la recaudación total de cada sucursal\n";
-		cout<<"8)Mostrar la sucursal con mayor número de ventas\n";
-		cout<<"9)Mostrar la sucursal de mayor recaudación\n";
-		cout<<"10)Mostrar la recaudación total de la empresa\n";
-		cout<<"11)Modificar los precios\n";
-		cout<<"12)Modificar el stock\n";
-		cout<<"13)Modificar las ventas\n";
-		cout<<"14)Eliminar producto de stock\n";
-		cout<<"15)Salir del programa\n";
+		cout << "Ingrese la opción que desea realizar\n";
+		cout << "1) Mostrar cantidad de artículos vendidos de cada artículo por cada sucursal\n";
+		cout << "2) Mostrar cantidad de artículos vendidos de cada artículo en la sucursal indicada\n";
+		cout << "3) Mostrar cantidad de artículos vendidos de un artículo dado en la sucursal indicada\n";
+		cout << "4) Mostrar cantidad de stock disponible de cada artículo en la sucursal dada\n";
+		cout << "5) Mostrar el stock disponible de todos los artículos en cada sucursal\n";
+		cout << "6) Mostrar el stock disponible del artículo indicado en la sucursal dada\n";
+		cout << "7) Mostrar la recaudación total de cada sucursal\n";
+		cout << "8) Mostrar la sucursal con mayor número de unidades vendidas\n";
+		cout << "9) Mostrar la sucursal con mayor recaudación\n";
+		cout << "10) Mostrar la recaudación total de la empresa\n";
+		cout << "11) Modificar los precios\n";
+		cout << "12) Modificar el stock\n";
+		cout << "13) Modificar las ventas\n";
+		cout << "14) Eliminar producto del stock\n";
+		cout << "15) Salir del programa\n";
 		cin>>eleccion;
 		switch(eleccion){
 			case 1:{
@@ -504,14 +504,14 @@ int main(){
 	setlocale(LC_CTYPE,"spanish");
 	
 	int men_registro = 0;
-    cout<<"1)Registro e inicio de sesión\n";
+    /*cout<<"1)Registro e inicio de sesión\n";
     cout<<"2)Salir\n";
     cin >> men_registro;
     if (men_registro == 1) {
         registroYLogin();
     } else {
         return 1;
-    }
+    }*/
 	int numProductos = 5;
 	string nombre[5]={"Sucursal_1","Sucursal_2","Sucursal_3","Sucursal_4","Sucursal_5"};
 	string productos[5]={"Hamburguesas","Pizzas","HotDogs","Nuggets","Donas"};
