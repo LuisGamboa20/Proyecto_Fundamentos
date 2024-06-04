@@ -485,6 +485,7 @@ void MenuOpciones(string nombre[], string productos[], int precios[], int stock[
 				break;
 			}
 			case 15:{
+				system("cls");
 				cont = 1;
 				break;
 			}
@@ -504,14 +505,15 @@ int main(){
 	setlocale(LC_CTYPE,"spanish");
 	
 	int men_registro = 0;
-    /*cout<<"1)Registro e inicio de sesión\n";
+    cout<<"1)Registro e inicio de sesión\n";
     cout<<"2)Salir\n";
     cin >> men_registro;
+    system("cls");
     if (men_registro == 1) {
         registroYLogin();
     } else {
         return 1;
-    }*/
+    }
 	int numProductos = 5;
 	string nombre[5]={"Sucursal_1","Sucursal_2","Sucursal_3","Sucursal_4","Sucursal_5"};
 	string productos[5]={"Hamburguesas","Pizzas","HotDogs","Nuggets","Donas"};
